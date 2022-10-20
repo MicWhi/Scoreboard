@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:white;">
+    <div class="timerDisplay">
+        00 : 00
+</div>
+<div class="buttons">
+    <button id="startTimer">Start</button>
+    <button id="pauseTimer">Pause</button>
+    <button id="resetTimer">Stop</button>
+  </div>
+    <table>
+    <tr>
+        <td><img src="../images/hearts.png" alt="Hearts Badge" width="50" height="50"></td>
+    <td><h1 id="homeScore">0</h1></td>
+    <td> V </td>
+    <td><h1 id="awayScore">0</h1></td>
+        <td><img src="../images/hibs.png" alt="Hibs Badge" width="50" height="50"></td>
+    </tr>
+    <tr>
+        <td>Hearts</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Hibs</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button id="homeGoal">Home Goal</button></td>
+        <td></td>
+        <td><button id="awayGoal">Away Goal</button></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><b>Cards</b></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><button id="homeYellow">Home Yellow</button></td>
+        <td><button id="homeRed">Home Red</button></td>
+        <td></td>
+        <td><button id="awayYellow">Away Yellow</button></td>
+        <td><button id="awayRed">Away Red</button></td>
+    </tr>
+    <tr>
+        <td><h1 id="homeYellowDisplay">0</h1></td>
+        <td><h1 id="homeRedDisplay">0</h1></td>
+        <td></td>
+        <td><h1 id="awayYellowDisplay">0</h1></td>
+        <td><h1 id="awayRedDisplay">0</h1></td>
+    </tr>
+    </table>
+    <hr>
+
+    <table id="matchEvents">
+
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
