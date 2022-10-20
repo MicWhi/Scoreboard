@@ -139,32 +139,21 @@ function addEvent(eventName, eventTime, homeOrAway) {
     // Insert a cell in the row at 
     let newCell = newRow.insertCell();
     let newCell2 = newRow.insertCell();
+    let newCell3 = newRow.insertCell();
  
     // Append a text node to the cell
-    let newText = document.createTextNode(eventTime + ": " + eventName);
+    let eventTimeTextNode = document.createTextNode(eventTime);
 
-    newCell2.appendChild(eventTime)
+    newCell2.appendChild(eventTimeTextNode);
 
     if (homeOrAway === "home") {
-        newCell.appendChild(newText);
+        let homeEventNameTextNode = document.createTextNode(eventName + "   ");
+        newCell.appendChild(homeEventNameTextNode);
     } 
     else if (homeOrAway === "away") {
-        let newCell3 = newRow.insertCell();
-        newCell3.appendChild(newText);
+        
+        let awayEventNameTextNode = document.createTextNode("   " + eventName);
+        newCell3.appendChild(awayEventNameTextNode);
     }
 
     }
-
-    // let table = document.querySelector('matchEvents');
-
-    // let tr = document.createElement('tr');
-
-    // if (homeOrAway === "home") {
-    //     tr[0].appendChild("hearts goal");
-    // } else if (homeOrAway === "away") {
-    //     tr[0].appendChild("hearts goal");
-    // }
-
-    // table.appendChild(tr);
-
-//   }  
